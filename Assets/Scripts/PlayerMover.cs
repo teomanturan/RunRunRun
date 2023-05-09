@@ -4,16 +4,34 @@ using UnityEngine;
 
 public class PlayerMover : MonoBehaviour
 {
-    float speed = 10;
+    public float speed = 10;
+
+    float horizontalInput;
+
     private void FixedUpdate()
     {
         Mover();
     }
 
-    #region
+    private void Update()
+    {
+        HorizontalMover();
+    }
+
+    #region Ýleriye doðru hareket
     void Mover()
     {
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
     }
+    #endregion
+
+    #region Yatay Hareket
+
+    void HorizontalMover()
+    {
+        horizontalInput = Input.GetAxis("Horizontal");
+        transform.Translate(Vector3.right * horizontalInput * Time.deltaTime);
+    }
+
     #endregion
 }//Class

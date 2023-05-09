@@ -16,5 +16,4 @@ public class CameraController : MonoBehaviour
     {
         transform.position = target.transform.position + distance;
     }
-
 }//Class
