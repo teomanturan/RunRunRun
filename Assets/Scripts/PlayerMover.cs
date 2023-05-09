@@ -5,7 +5,6 @@ using UnityEngine;
 public class PlayerMover : MonoBehaviour
 {
     public float speed = 10;
-
     float horizontalInput;
 
     private void FixedUpdate()
@@ -18,7 +17,7 @@ public class PlayerMover : MonoBehaviour
         HorizontalMover();
     }
 
-    #region Ýleriye doðru hareket
+    #region Ileriye dogru hareket
     void Mover()
     {
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
@@ -30,7 +29,7 @@ public class PlayerMover : MonoBehaviour
     void HorizontalMover()
     {
         horizontalInput = Input.GetAxis("Horizontal");
-        transform.Translate(Vector3.right * horizontalInput * Time.deltaTime);
+        transform.Translate(Vector3.right * horizontalInput * speed * Time.deltaTime);
     }
 
     #endregion
