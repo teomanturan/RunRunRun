@@ -4,20 +4,32 @@ using UnityEngine;
 
 public class PlayerMover : MonoBehaviour
 {
+    [SerializeField] GameObject startPanel;
+    public static bool gameStarted;
     public float speed = 10;
     public float horizontalSpeed = 30;
-    float horizontalInput;
     int lane = 1;
     float laneDistance = 6;
 
+
     private void FixedUpdate()
     {
+        if (!gameStarted)
+        {
+            return;
+        }
         Mover();
+
     }
 
     private void Update()
     {
+        if (!gameStarted)
+        {
+            return;
+        }
         HorizontalMover();
+
     }
 
     #region Ileriye dogru hareket
@@ -59,5 +71,16 @@ public class PlayerMover : MonoBehaviour
 
         transform.position = Vector3.Lerp(transform.position, targetPosition, 3 * Time.fixedDeltaTime);
     }
+    #endregion
+
+    #region Oyuna Başlama İşlemi
+
+    public void StartGame()
+    {
+        startPanel.SetActive(false);
+        gameStarted = true;
+        
+    }
+
     #endregion
 }//Class
