@@ -14,13 +14,14 @@ public class PlayerCollector : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Debug.Log(score);
     }
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Coin"))
         {
             score += 5;
+            Destroy(other.gameObject);
         }
     }
 }
