@@ -6,6 +6,6 @@ public class ObstacleMover : MonoBehaviour
 {
     private void FixedUpdate()
     {
-        transform.Translate(Vector3.right * 10 * Time.deltaTime);
+        transform.Translate(Vector3.right * 3 * Time.deltaTime);
     }
 }
