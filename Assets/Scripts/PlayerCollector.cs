@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerCollector : MonoBehaviour
 {
     public static int score;
+    [SerializeField] Text
     // Start is called before the first frame update
     void Start()
     {
@@ -14,7 +16,6 @@ public class PlayerCollector : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(score);
     }
     private void OnTriggerEnter(Collider other)
     {

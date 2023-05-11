@@ -32,6 +32,14 @@ public class PlayerMover : MonoBehaviour
 
     }
 
+    #region Belirli katsayılarda hızlanma
+
+
+
+    #endregion
+
+
+
     #region Ileriye dogru hareket
     void Mover()
     {

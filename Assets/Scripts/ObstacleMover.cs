@@ -6,7 +6,8 @@ public class ObstacleMover : MonoBehaviour
 {
     private void FixedUpdate()
     {
-        if(!PlayerMover.gameStarted)
-        transform.Translate(Vector3.right * 3 * Time.deltaTime);
+        if (!PlayerMover.gameStarted)
+            return;
+        transform.Translate(Vector3.right * 1.5f * Time.deltaTime);
     }
 }
