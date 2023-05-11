@@ -12,7 +12,6 @@ public class ChangerItem : MonoBehaviour
         for (int i = 0; i < 3; i++)
         {
             vehicleType.Add(player.transform.GetChild(i).gameObject);
-            Debug.Log(vehicleType[i].name);
         }
     }
     private void OnTriggerEnter(Collider other)
