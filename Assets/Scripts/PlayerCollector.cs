@@ -10,7 +10,7 @@ public class PlayerCollector : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        highScoreText.text = "High Score: " + PlayerPrefs.GetInt("HighScore");
     }
 
     private void FixedUpdate()

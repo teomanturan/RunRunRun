@@ -100,7 +100,7 @@ GameObject:
   - component: {fileID: 4383652012638754576}
   m_Layer: 0
   m_Name: ObstacleCarGreen
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -187,8 +187,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.041918803, y: 0.014048178, z: 0.021649476}
-  m_Center: {x: 0.00043716852, y: 0.0006333061, z: -0.0000000018626456}
+  m_Size: {x: 0.041918803, y: 0.03659975, z: 0.021649476}
+  m_Center: {x: 0.00043716907, y: 0.011909098, z: -0.0000000023841857}
 --- !u!114 &4383652012638754576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -954,7 +954,7 @@ GameObject:
   - component: {fileID: 4383652013981572963}
   m_Layer: 0
   m_Name: ObstacleCarRed
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1041,8 +1041,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.041918803, y: 0.014048178, z: 0.021649476}
-  m_Center: {x: 0.00043719832, y: 0.0006333061, z: -0.0000000018626456}
+  m_Size: {x: 0.041918803, y: 0.03638304, z: 0.021649476}
+  m_Center: {x: 0.00043719768, y: 0.01180074, z: -0.0000000023841857}
 --- !u!114 &4383652013981572963
 MonoBehaviour:
   m_ObjectHideFlags: 0

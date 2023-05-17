@@ -11,7 +11,13 @@ public class PlayerMover : MonoBehaviour
     int lane = 1;
     float laneDistance = 6;
 
-
+    private void Start()
+    {
+        if (GameManager.gameRestarted)
+        {
+            startPanel.SetActive(false);
+        }
+    }
     private void FixedUpdate()
     {
         if (!gameStarted)
