@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] GameObject restartPanel;
+    [SerializeField] GameObject restartPanel,resetPanel;
     public static bool gameRestarted;
     public void QuitGame()
     {
@@ -13,11 +13,25 @@ public class GameManager : MonoBehaviour
 
     public void RestartGame()
     {
+        PlayerCollector.score = 0;
         restartPanel.SetActive(false);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         gameRestarted = true;
-        PlayerDeath.isDead = false;
         PlayerMover.gameStarted = true;
         Time.timeScale = 1;
+    }
+    public void OpenResetPanel()
+    {
+        resetPanel.SetActive(true);
+    }
+
+    public void ResetPanelNo()
+    {
+        resetPanel.SetActive(false);
+    }
+
+    public void ResetPanelYes()
+    {
+        PlayerPrefs.SetInt("HighScore", 0);
     }
 }

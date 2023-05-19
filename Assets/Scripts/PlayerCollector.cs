@@ -11,6 +11,8 @@ public class PlayerCollector : MonoBehaviour
     void Start()
     {
         highScoreText.text = "High Score: " + PlayerPrefs.GetInt("HighScore");
+        startPanelHighScoreText.text = "High Score: " + PlayerPrefs.GetInt("HighScore");
+
     }
 
     private void FixedUpdate()
