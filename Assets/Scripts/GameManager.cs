@@ -13,7 +13,6 @@ public class GameManager : MonoBehaviour
 
     public void RestartGame()
     {
-        PlayerCollector.score = 0;
         restartPanel.SetActive(false);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         gameRestarted = true;

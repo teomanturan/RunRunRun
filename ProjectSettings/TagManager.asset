@@ -9,6 +9,7 @@ TagManager:
   - ChangerItem
   - Human
   - Obstacle
+  - MultiplierItem
   layers:
   - Default
   - TransparentFX
